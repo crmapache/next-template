@@ -6,7 +6,8 @@
     "dev": "next dev --port=3010",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "precommit": "tsc --noEmit && yarn lint"
   },
   "dependencies": {
     "@radix-ui/themes": "^3.1.3",
@@ -22,6 +23,9 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
+    "husky": "^9.1.4",
+    "inquirer-fuzzy-path": "^2.3.0",
+    "plop": "^4.0.1",
     "prettier": "^3.3.3",
     "prettier-plugin-sort-react-imports": "^0.5.5",
     "typescript": "^5"
