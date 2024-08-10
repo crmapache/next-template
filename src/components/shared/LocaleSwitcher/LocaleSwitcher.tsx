@@ -12,7 +12,7 @@ export const LocaleSwitcher = () => {
   const currentLocale = useLocale()
 
   return (
-    <Container>
+    <Container test={1}>
       {locales.map((locale) => (
         <Button key={locale} variant={locale === currentLocale ? 'solid' : 'outline'} asChild>
           <Link href="/" locale={locale}>
