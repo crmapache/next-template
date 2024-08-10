@@ -4,7 +4,15 @@
       "title": "Home | Create Next App",
       "description": "Lorem ipsum dolor sit amet. ( EN )"
     },
-    "page-name": "Home",
+    "pageName": "Home",
     "title": "Next.js Application Template"
+  },
+  "NotFound": {
+    "metadata": {
+      "title": "404 | Create Next App",
+      "description": "404 ( EN )"
+    },
+    "pageName": "Not Found",
+    "goHome": "Go Home"
   }
 }

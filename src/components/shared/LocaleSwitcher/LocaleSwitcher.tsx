@@ -3,23 +3,24 @@
 import { useLocale } from 'next-intl'
 
 import { locales } from '@/i18n'
-import { Link } from '@/navigation'
+import { Link, usePathname } from '@/navigation'
 import { Button } from '@radix-ui/themes'
 
-import { Container } from './LocaleSwitcher.elements'
+import { Root } from './LocaleSwitcher.elements'
 
 export const LocaleSwitcher = () => {
   const currentLocale = useLocale()
+  const pathname = usePathname()
 
   return (
-    <Container>
+    <Root>
       {locales.map((locale) => (
         <Button key={locale} variant={locale === currentLocale ? 'solid' : 'outline'} asChild>
-          <Link href="/" locale={locale}>
+          <Link href={pathname} locale={locale}>
             {locale.toUpperCase()}
           </Link>
         </Button>
       ))}
-    </Container>
+    </Root>
   )
 }

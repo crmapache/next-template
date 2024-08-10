@@ -4,9 +4,8 @@ import { getMessages, unstable_setRequestLocale } from 'next-intl/server'
 import { Inter } from 'next/font/google'
 
 import { locales } from '@/i18n'
+import { StyledComponentsRegistry } from '@/registry'
 import { Theme } from '@radix-ui/themes'
-
-import { StyledComponentsRegistry } from '../registry'
 
 import '@radix-ui/themes/styles.css'
 import '@styles/globals.css'

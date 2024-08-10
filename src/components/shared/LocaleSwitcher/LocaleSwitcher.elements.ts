@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Root = styled.div`
   display: flex;
   justify-content: center;
   gap: 10px;

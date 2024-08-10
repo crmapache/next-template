@@ -4,7 +4,15 @@
       "title": "Inicio | Create Next App",
       "description": "Lorem ipsum dolor sit amet. ( ES )"
     },
-    "page-name": "Inicio",
+    "pageName": "Inicio",
     "title": "Plantilla de aplicación Next.js"
+  },
+  "NotFound": {
+    "metadata": {
+      "title": "404 | Create Next App",
+      "description": "404 ( EN )"
+    },
+    "pageName": "No Encontrado",
+    "goHome": "Ir al Inicio"
   }
 }
