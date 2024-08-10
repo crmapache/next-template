@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server'
 import { Inter } from 'next/font/google'
 
+import { locales } from '@/i18n'
 import { Theme } from '@radix-ui/themes'
 
 import { StyledComponentsRegistry } from '../registry'
@@ -34,4 +35,8 @@ export default async function LocaleLayout({
       </body>
     </html>
   )
+}
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }))
 }

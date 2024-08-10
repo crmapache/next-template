@@ -1,23 +1,25 @@
 'use client'
 
 import { useLocale } from 'next-intl'
-import Link from 'next/link'
 
 import { locales } from '@/i18n'
+import { Link } from '@/navigation'
 import { Button } from '@radix-ui/themes'
 
-import { LocaleSwitcherContainer } from './LocaleSwitcher.elements'
+import { Container } from './LocaleSwitcher.elements'
 
 export const LocaleSwitcher = () => {
   const currentLocale = useLocale()
 
   return (
-    <LocaleSwitcherContainer>
+    <Container>
       {locales.map((locale) => (
         <Button key={locale} variant={locale === currentLocale ? 'solid' : 'outline'} asChild>
-          <Link href={`/${locale}`}>{locale.toUpperCase()}</Link>
+          <Link href="/" locale={locale}>
+            {locale.toUpperCase()}
+          </Link>
         </Button>
       ))}
-    </LocaleSwitcherContainer>
+    </Container>
   )
 }
