@@ -1,0 +1,10 @@
+{
+  "Home": {
+    "metadata": {
+      "title": "Home | Create Next App",
+      "description": "Lorem ipsum dolor sit amet. ( EN )"
+    },
+    "page-name": "Home",
+    "title": "Next.js Application Template"
+  }
+}

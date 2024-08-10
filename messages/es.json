@@ -1,0 +1,10 @@
+{
+  "Home": {
+    "metadata": {
+      "title": "Inicio | Create Next App",
+      "description": "Lorem ipsum dolor sit amet. ( ES )"
+    },
+    "page-name": "Inicio",
+    "title": "Plantilla de aplicación Next.js"
+  }
+}
