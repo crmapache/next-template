@@ -1,2 +1,6 @@
 export * from './home'
 export * from './not-found'
+export * from './layout'
+export * from './navigation'
+export * from './about-us'
+export * from './contacts'

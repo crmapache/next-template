@@ -2,7 +2,6 @@
 
 import { useTranslations } from 'next-intl'
 
-import { LocaleSwitcher } from '@shared'
 import { Link } from '@/navigation'
 import { Button, Heading } from '@radix-ui/themes'
 
@@ -20,8 +19,6 @@ export const NotFoundPage = () => {
       <Button variant="solid" asChild>
         <Link href="/">{t('goHome')}</Link>
       </Button>
-
-      <LocaleSwitcher />
     </Root>
   )
 }

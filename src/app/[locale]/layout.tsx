@@ -1,5 +1,6 @@
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server'
 
+import { CommonLayout } from '@features'
 import { LayoutProps } from '@types'
 import { locales } from '@/i18n'
 import { Provider } from '@/provider'
@@ -16,7 +17,7 @@ export default async function Layout({ children, params: { locale } }: LayoutPro
     <html lang={locale} suppressHydrationWarning>
       <body>
         <Provider messages={messages} locale={locale}>
-          {children}
+          <CommonLayout>{children}</CommonLayout>
         </Provider>
       </body>
     </html>

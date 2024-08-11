@@ -4,10 +4,10 @@ import { useTranslations } from 'next-intl'
 
 import { Heading } from '@radix-ui/themes'
 
-import { Root } from './HomePage.elements'
+import { Root } from './AboutUsPage.elements'
 
-export const HomePage = () => {
-  const t = useTranslations('Home')
+export const AboutUsPage = () => {
+  const t = useTranslations('AboutUs')
 
   return (
     <Root>

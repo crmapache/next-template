@@ -1,10 +1,10 @@
 import { getTranslations } from 'next-intl/server'
 
-import { HomePage } from '@features'
+import { AboutUsPage } from '@features'
 import { GenerateMetadataProps } from '@types'
 
 export async function generateMetadata({ params: { locale } }: GenerateMetadataProps) {
-  const t = await getTranslations({ locale, namespace: 'Home' })
+  const t = await getTranslations({ locale, namespace: 'AboutUs' })
 
   return {
     title: t('metadata.title'),
@@ -13,5 +13,5 @@ export async function generateMetadata({ params: { locale } }: GenerateMetadataP
 }
 
 export default function Page() {
-  return <HomePage />
+  return <AboutUsPage />
 }
