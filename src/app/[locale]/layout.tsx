@@ -1,9 +1,11 @@
 import { ReactNode } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
+import { ThemeProvider } from 'next-themes'
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server'
 import { Inter } from 'next/font/google'
 
 import { locales } from '@/i18n'
+import { Provider } from '@/provider'
 import { StyledComponentsRegistry } from '@/registry'
 import { Theme } from '@radix-ui/themes'
 
@@ -24,13 +26,17 @@ export default async function LocaleLayout({
   const messages = await getMessages()
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
-        <Theme>
-          <StyledComponentsRegistry>
-            <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
-          </StyledComponentsRegistry>
-        </Theme>
+        <ThemeProvider attribute="class">
+          <Theme>
+            <StyledComponentsRegistry>
+              <NextIntlClientProvider messages={messages}>
+                <Provider>{children}</Provider>
+              </NextIntlClientProvider>
+            </StyledComponentsRegistry>
+          </Theme>
+        </ThemeProvider>
       </body>
     </html>
   )

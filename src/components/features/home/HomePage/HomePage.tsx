@@ -2,8 +2,8 @@
 
 import { useTranslations } from 'next-intl'
 
+import { ThemeSwitcher, LocaleSwitcher } from '@shared'
 import { Heading } from '@radix-ui/themes'
-import { LocaleSwitcher } from '@/components/shared/LocaleSwitcher'
 
 import { Root } from './HomePage.elements'
 
@@ -19,6 +19,7 @@ export const HomePage = () => {
         {t('title')}
       </Heading>
       <LocaleSwitcher />
+      <ThemeSwitcher />
     </Root>
   )
 }

@@ -20,14 +20,29 @@
     "paths": {
       "@/*": ["./src/*"],
 
+      "@core": ["./src/components/core"],
+      "@core/*": ["./src/components/core/*"],
+
       "@features": ["./src/components/features"],
       "@features/*": ["./src/components/features/*"],
+
+      "@shared": ["./src/components/shared"],
+      "@shared/*": ["./src/components/shared/*"],
 
       "@types": ["./src/types"],
       "@types/*": ["./src/types/*"],
 
       "@styles": ["./src/styles"],
-      "@styles/*": ["./src/styles/*"]
+      "@styles/*": ["./src/styles/*"],
+
+      "@hooks": ["./src/hooks"],
+      "@hooks/*": ["./src/hooks/*"],
+
+      "@api": ["./src/api"],
+      "@api/*": ["./src/api/*"],
+
+      "@assets": ["./src/assets"],
+      "@assets/*": ["./src/assets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -2,9 +2,9 @@
 
 import { useTranslations } from 'next-intl'
 
+import { LocaleSwitcher } from '@shared'
 import { Link } from '@/navigation'
 import { Button, Heading } from '@radix-ui/themes'
-import { LocaleSwitcher } from '@/components/shared/LocaleSwitcher'
 
 import { Root } from './NotFoundPage.elements'
 

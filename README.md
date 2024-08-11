@@ -74,3 +74,23 @@ Try to avoid use prefix in styled components naming:
 ``❌ export const ComponentNameHeader = styled.div``
 
 ``scr/styles``: global and additional css/scss files
+
+This project also uses [`@radix-ui/themes`](https://www.radix-ui.com/themes/docs/overview/getting-started), so it is necessary to use as many possibilities as possible from there, such as:
+- colors
+- typography
+- spacing
+- breakpoints
+- radius
+- shadows
+- cursors
+- layout components
+- UI components
+
+## API calls
+This project uses [`@tanstack/react-query`](https://tanstack.com/query/v3) for api calls.  
+Examples can be found in ``scr/api``. All other API calls should be placed there as well.
+
+## Dark mode
+This project uses [`next-themes`](https://github.com/pacocoursey/next-themes) to handle dark mode.  
+
+You can find all the documentation at the link above, and also modify the ``src/components/shared/ThemeSwitcher`` to switch the theme if necessary.
